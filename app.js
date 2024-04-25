@@ -38,7 +38,7 @@ connectToDb((err) => {
   }
   db = getDb();
   app.listen(3002, () => {
-    console.log(`App is listening on port 3001`);
+    console.log(`App is listening on port 3002`);
   });
 });
 
@@ -88,7 +88,7 @@ app.post("/signup/", async (request, response) => {
     }
   });
   
-  app.post("/login", async (request, response) => {
+  app.post("/login/", async (request, response) => {
     try {
       const { email, password } = request.body;
   
