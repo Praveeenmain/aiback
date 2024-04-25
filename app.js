@@ -37,7 +37,7 @@ connectToDb((err) => {
     return;
   }
   db = getDb();
-  app.listen(3001, () => {
+  app.listen(3002, () => {
     console.log(`App is listening on port 3001`);
   });
 });
